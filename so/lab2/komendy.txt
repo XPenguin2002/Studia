@@ -1,0 +1,74 @@
+1.
+net users
+net localgroup
+2.
+net user "nazwa użytkownika" /add && net localgroup "nazwa grupy" /add "nazwa użytkownika"
+3.
+net user /delete "nazwa użytkownika"
+net localgroup /delete "nazwa grupy"
+4.
+compmgmt.msc
+5.
+secpol.msc
+6.
+7.
+net user Jan /add && wmic useraccount where "Name='Jan'" set homedirectory="C:\Foldery_macierzyste\Jan"
+8.
+compmgmt.msc
+9.
+net user Jan | find "Ostatnie logowanie"
+12.
+net accounts /MINPWLEN:10
+13.
+net accounts /MAXPWAGE:5
+15.
+a) net user /add Student1 && net user /add Student2 && net user /add Student3
+b) net localgroup Grupa1 /add && net localgroup Grupa2 /add
+c) net localgroup Grupa1 /add Student1 && net localgroup Grupa1 /add Student2
+d) net localgroup Grupa2 /add Student2 && net localgroup Grupa2 /add Student3
+e) mkdir  C:\dane_grup
+f) -
+g) icacls C:\dane_grup
+h) icacls C:\dane_grup /inheritance:r /grant:r "Grupa1:(OI)(CI)M"
+i) icacls C:\dane_grup /grant Grupa2:(RX) /deny Grupa2:(W)
+j) ???????????????
+17.
+icacls C:\dane_admina /grant admin:(F) /inheritance:e && echo > C:\dane_admina\plik_admina.txt
+18.
+???????????????
+19.-
+20.
+a)list disk
+list volume
+list partition
+b)list partition
+21.-
+22.tak, obsługuje
+23.fsutil quota enforce C: //włączenie
+fsutil quota modify C: 83886080 125829120 Student1
+fsutil quota query C: //sprawdzenie
+24.whoami /user
+25.
+a)query session
+b)query user
+c) taskmgr
+26.
+a)query process student1
+b)query process console
+c)query process notepad.exe
+d)process id
+e)-
+27.
+a)tasklist /FI "USERNAME eq Student1"
+b)tasklist /FI "SESSIONNAME eq console"
+c)tasklist /FI "IMAGENAME eq notepad.exe"
+28.-
+29.taskkill /F /FI "USERNAME eq Student1" /FI "IMAGENAME eq notepad.exe" //u mnie nie został uruchomiony.
+30. 14:30
+31.14:30:36
+32.-
+33.-
+34.-
+35.gpresult /user Student1 /v
+36.gpresult /Scope Computer /v
+37.gpresult /user Student1 /h C:\raport\student1.html
