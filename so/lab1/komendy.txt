@@ -1,0 +1,33 @@
+1.
+title Systemy operacyjne - laboratorium
+color 1E
+3.
+time /t&&date /t
+lub
+%time% %date%
+4.
+chkdsk > raport_dysk.txt           >-dopisywanie >>-nadpisywanie
+5.
+type raport_dysk.txt
+6.
+dir /A-d c:\
+7.
+dir /ad c:\
+8.
+dir /oe /a-d /s c:\windows\system32              /s=rekurencyjnie
+9.
+copy /v ..\ .\              /v=weryfikacja
+10.
+mkdir kat1 kat2
+xcopy c:\windows\system32\?d* .\kat2
+11.
+rmdir .\kat1
+12.
+rmdir /s .\kat2
+13.
+echo > dane.h && attrib +h dane.h && dir
+14.
+copy con dane.txt
+15.
+prompt $d $g
+
