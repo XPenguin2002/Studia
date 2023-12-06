@@ -24,7 +24,7 @@ public class Zad2 {
         Zad2 plik = new Zad2();
         plik.zapisz("F:\\Java\\src\\lab7\\plik_txt.txt", "Elo benc txt 321.");
         plik.odczytaj("F:\\Java\\src\\lab7\\plik_txt.txt");
-        plik.zapisz("F:\\Java\\src\\lab7\\plik_csv.csv", "Imi3,Nazwisko,Wiek\nJa,Jajowy,21\nBenc,Bencowy,22");
+        plik.zapisz("F:\\Java\\src\\lab7\\plik_csv.csv", "Imie,Nazwisko,Wiek\nJa,Jajowy,21\nBenc,Bencowy,22");
         plik.odczytaj("F:\\Java\\src\\lab7\\plik_csv.csv");
     }
 }
