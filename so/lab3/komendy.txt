@@ -1,0 +1,21 @@
+1. Get-Help Set-Location
+2. Get-Service
+3. Get-Process
+4. Get-Process | Where-Object { $_.Id -gt 716 }
+5. Get-Process | Where-Object { $_.BasePriority -lt 5916 }
+6. Get-Process 'c*'
+7. Get-Service | Where-Object {$_.Status -eq 'Running'} | Format-List
+8. Get-Service | Sort-Object DisplayName | Group-Object Status
+9. New-Item -ItemType Directory -Path C:\PS -Force
+Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 10 | Format-Table | Out-File -FilePath "C:\PS\TopProcesses.txt"
+10. Get-Process | Sort-Object Id -Descending
+11. Get-Process | Get-Member -MemberType Properties
+12. Get-Alias
+13. Set-Alias -Name benc -Value Get-Process
+14. $Host.UI.RawUI.BackgroundColor = "black"
+15. $Input = Read-Host "Wprowadź dane"; Write-Host "Wprowadzone dane: $Input"
+16. for ($i=1 ; $i -le 10 ; $i++) { $numer = Get-Random ; $kolor = Get-Random -Minimum 0 -Maximum 15 ; Write-Host $numer -ForegroundColor $kolor }
+17. Get-Alias | Format-List
+18. Get-Command -CommandType Cmdlet | Where-Object { $_.Name -match 'Process'}
+19. Get-Help Get-Acl
+20. Get-Content C:\PS\TopProcesses.txt

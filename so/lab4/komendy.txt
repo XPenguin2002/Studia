@@ -1,0 +1,61 @@
+1zad.
+a) ls -l
+b) ls -la
+c) ls -lS
+d) ls -lt
+e) ls -l | find *.txt
+f) ls -l | find ??i*
+
+2zad.
+a) ls -l | more
+b) ls > wynik.dat
+
+3zad.
+mkdir katalog && echo>plik.txt && ln -s plik.txt katalog/kopia.txt
+
+4zad.
+cat<dane1.dat && cat<dane2.cat && cat dane1.cat>dane3.cat && cat dane2.cat>>dane3.cat
+
+5zad.
+file plik.txt && file katalog/kopia.txt
+
+6zad.
+diff dane3.dat dane3.dat
+
+7zad.
+a) find *.dat
+b) find ?{a,i}*
+c) find -mmin -5
+d) find -name "p*" -mmin +10
+e) find -type f -perm 644
+
+8zad.
+$HOME
+
+9zad.
+mkdir -p zajecia/zadania/lab4
+
+10zad.
+a) echo $HISTFILE
+b) basename $HISTFILE && basename $HISTFILE
+
+11zad.
+ls -tr
+
+12zad.
+ls -lF
+
+13zad.
+echo "napis" > test1 > test2 > test3 | mkdir tmp | cp test1 test2 test3 tmp
+
+14zad.
+rm test1 test2 test3
+
+15zad.
+rm -f tmp/test1 tmp/test2 tmp/test3
+
+16zad.
+mkdir -p zadania/unix && ln -s -d zadania/unix zu
+
+17zad.
+mkdir test2 && touch test2/ala.test test2/bela.test test2/cela.test test2/dela.test test2/mela.test && ln test2/

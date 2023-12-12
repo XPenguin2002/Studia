@@ -1,0 +1,41 @@
+1.net user użytkownik /add
+2.net localgroup grupa użytkownik /add
+3.net user użytkownik /delete
+4.
+5.
+6.
+7.net user użytkownik /homedir:ścieżka
+8.
+9.
+10.
+11.
+12.net accounts /minpwlen:10
+13.net accounts /maxpwage:5
+14.@echo off
+for /f "tokens=1,2,3 delims=," %%a in (%1) do (
+net user /add %%c
+net user %%c /fullname:"%%b"
+)
+15.isacls scieżka /grant użytkownik uprawnienia
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
