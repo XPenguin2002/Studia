@@ -58,4 +58,38 @@ rm -f tmp/test1 tmp/test2 tmp/test3
 mkdir -p zadania/unix && ln -s -d zadania/unix zu
 
 17zad.
-mkdir test2 && touch test2/ala.test test2/bela.test test2/cela.test test2/dela.test test2/mela.test && ln test2/
+mkdir test2 && touch test2/ala.test test2/bela.test test2/cela.test test2/dela.test test2/mela.test && ln -s test2/ala.test a.sym && ln test2/ala.test a.szt
+
+18zad.
+rm test2/bela.test test2/cela.test test2/dela.test
+
+19zad.
+ls -la /bin/ > zad_lab4
+
+20zad.
+head -n 10 zad_lab4
+
+21zad.
+tail -n 15 zad_lab4
+
+22zad.
+tail -n 15 zad_lab4 | tac
+
+23zad.
+a) zapisuje on poszczególne komendy/skrypty przy każdym logowaniu użytkownika.
+b) wpisanie tej linijki powoduje że po wpisaniu komendy rm tak naprawdę wpisujemy rm -i. Wpisanie tego w tym pliku powoduje że przy każdym logowaniu alias będzie działać bo normalnie się resetuje z każdym wyłączeniem urządzenia.
+
+24zad.
+echo elo >> ~/.bash_profile
+echo naura >> ~/.bash_logout
+
+25zad.
+sort dane3.dat
+sort -r dane3.dat
+sort -k1.2 dane3.dat
+
+26zad.
+grep '[0-9]' dane3.dat
+grep 'a' dane3.dat
+grep '[a-h]' dane3.dat
+grep -v '[0-9]' dane3.dat > filtr1.dat
